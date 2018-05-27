@@ -1,0 +1,141 @@
+body {
+  background-color: #fbb03b
+}
+
+section.pagescroll {
+  margin: 0 auto;
+  max-width: 600px;
+  background-color: #fbb03b
+}
+
+img {
+  display: block;
+  max-width: 90%;
+}
+
+img.icon {
+  height: 30%
+}
+
+.b1 {
+  position: absolute;
+  bottom: 33%;
+  left: 40%;
+  width: 30%;
+}
+
+.b2,
+.b5 {
+  margin: 10px 20px 0 0;
+  width: 50%;
+  float: right;
+}
+
+.b3 {
+  margin-right: 20px;
+  width: 50%;
+  float: right;
+}
+
+.b4 {
+  margin: 20px 0 0 20px;
+  width: 23%;
+  float: left;
+}
+
+#e1_1 {
+  margin: 0 auto;
+  padding-top: 20px;
+  height: 25%;
+}
+
+#e1_2 {
+  margin: 20px auto;
+  height: 15%;
+}
+
+#e1_3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+#e2_1 {
+  margin: 0 auto;
+  padding-top: 20px;
+  height: 8%;
+}
+
+#e2_2,
+#e4_2,
+#e6_2,
+#e8_2 {
+  margin: 20px auto;
+  height: 70%;
+}
+
+#e3_1 {
+  margin: 0 auto;
+  padding-top: 20px;
+  height: 7%;
+}
+
+#e3_2,
+#e5_2,
+#e7_2,
+#e9_2 {
+  margin: 20px auto;
+  height: 7%;
+}
+
+#e3_3 {
+  margin: 20px auto;
+  width: 60%;
+  height: 60%;
+}
+
+#e3_3 img {
+  margin-top: 10px;
+}
+
+#e3_3 img:nth-child(odd) {
+  float: left
+}
+
+#e3_3 img:nth-child(even) {
+  float: right;
+}
+
+#i3_4 {
+  margin-right: -6px;
+}
+
+#i5_2 {
+  margin-right: -17px;
+}
+
+#i9_5 {
+  margin-left: -13px;
+}
+
+#e10_1 {
+  padding: 50px 0;
+  margin: 0 auto;
+  height: 8%
+}
+
+#e10_2 {
+  margin: 20px auto;
+  width: 80%;
+}
+
+.b6 {
+  margin: 0 auto;
+  height: 8%;
+}
+
+.point {
+  margin: 10px auto;
+  height: 15%;
+}
