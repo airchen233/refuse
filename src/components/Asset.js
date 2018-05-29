@@ -2,12 +2,14 @@ import React, { Component } from 'react'
 
 class Asset extends Component {
   render() {
-    let animate = this.props.animate ? ' animated' : ''
+    let className = this.props.className || ''
+    let animate = this.props.animate ? 'animated' : ''
     let props = {
       id: this.props.id,
-      src: `/images/${this.props.id}.png`,
-      className: this.props.className || '' + animate,
-      ...this.props
+      src: this.props.src || `/images/${this.props.id}.png`,
+      onClick: this.props.onClick,
+      className: `${className} ${animate} `,
+      animate: this.props.animate
     }
     return (
       <img {...props} alt="" />

@@ -4,7 +4,7 @@ import Asset from './Asset'
 class Button extends Asset {
   render() {
     let props = {
-      id: this.props.id,
+      ...this.props,
       className: 'button ' + this.props.id,
       onClick: () => {
         window.fpTurnTo(this.props.to)

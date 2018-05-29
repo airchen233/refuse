@@ -7,10 +7,10 @@ import 'animate.css'
 
 const Cover = () => (
   <Section>
-    <Asset id="e1_1" animate="fadeIn" />
-    <Asset id="e1_2" />
-    <Asset id="e1_3" />
-    <Button id="b1" to={2} />
+    <Asset id="e1_1" animate="bounceInDown" />
+    <Asset id="e1_2" animate="zoomIn" />
+    <Asset id="e1_3" animate="fadeInUp" />
+    <Button id="b1" to={2} animate="rubberBand" />
   </Section>
 )
 
@@ -19,8 +19,8 @@ const End = (props) => {
   return (
     <Section>
       <Asset id="e10_1" />
-      <Asset id={`e10_${id}`} className="point" />
-      <Asset id="e10_2" />
+      <Asset id={`e10_${id}`} className="point" animate="bounceIn" />
+      <Asset id="e10_2" animate="bounceIn" />
       <Button id="b6" click={()=>window.location.reload()} />
     </Section>
   )
@@ -88,7 +88,7 @@ class Quest extends Component {
       <span>
         <Section>
           <Asset id={`e2_1`} />
-          <Asset id={`e${id}_2`} />
+          <Asset id={`e${id}_2`} animate="bounceIn" />
           {id === 2 ? (
             <Button id="b2" to={id + 1} {...style} />
           ) : (
@@ -100,14 +100,14 @@ class Quest extends Component {
         </Section>
         <Section>
           <Asset id="e3_1" />
-          <Asset id={`e${id + 1}_2`} />
+          <Asset id={`e${id + 1}_2`} animate="swing" />
           <div id="e3_3">
-            <Icon id={`i${id + 1}_1`} {...event} />
-            <Icon id={`i${id + 1}_2`} {...event} />
-            <Icon id={`i${id + 1}_3`} {...event} />
-            <Icon id={`i${id + 1}_4`} {...event} />
-            <Icon id={`i${id + 1}_5`} {...event} />
-            <Icon id={`i${id + 1}_6`} {...event} />
+            <Icon id={`i${id + 1}_1`} animate="flipInY" {...event} />
+            <Icon id={`i${id + 1}_2`} animate="flipInY" {...event} />
+            <Icon id={`i${id + 1}_3`} animate="flipInY" {...event} />
+            <Icon id={`i${id + 1}_4`} animate="flipInY" {...event} />
+            <Icon id={`i${id + 1}_5`} animate="flipInY" {...event} />
+            <Icon id={`i${id + 1}_6`} animate="flipInY" {...event} />
           </div>
           <Button id="b4" to={id} />
           {id !== 8 ? (

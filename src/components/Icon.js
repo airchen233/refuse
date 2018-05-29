@@ -26,7 +26,7 @@ class Icon extends Asset {
   }
   render() {
     let props = {
-      id: this.props.id,
+      ...this.props,
       className: 'icon',
       src: `/images/${this.props.id}_${this.state.status + 1}.png`,
       onClick: this.onClick
