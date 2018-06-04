@@ -6,10 +6,11 @@ class Asset extends Component {
     let animate = this.props.animate ? 'animated' : ''
     let props = {
       id: this.props.id,
-      src: this.props.src || `/images/${this.props.id}.png`,
+      src: this.props.src || `images/${this.props.id}.png`,
       onClick: this.props.onClick,
       className: `${className} ${animate} `,
-      animate: this.props.animate
+      animate: this.props.animate,
+      style: this.props.style
     }
     return (
       <img {...props} alt="" />
