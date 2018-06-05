@@ -10,7 +10,7 @@ const Cover = () => (
     <Asset id="e1_1" animate="bounceInDown" />
     <Asset id="e1_2" animate="zoomIn" />
     <Asset id="e1_3" animate="fadeInUp" />
-    <Button id="b1" to={2} animate="rubberBand" />
+    <Button id="b1" to={2} click={()=>document.getElementsByTagName("audio")[0].play()} animate="rubberBand" />
   </Section>
 )
 
