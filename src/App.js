@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Scroller from './components/Scroller'
 import { Cover, Quest, End } from './components/Page'
+import Audio from './components/Audio'
 import './App.css'
 
 class App extends Component {
@@ -11,7 +12,8 @@ class App extends Component {
     this.onEnd = this.onEnd.bind(this)
     this.results = []
     this.state = {
-      point: 0
+      point: 0,
+      audio: true
     }
   }
   onPush(x) {
@@ -24,7 +26,8 @@ class App extends Component {
   }
   onEnd() {
     this.setState({
-      point: this.results.reduce((sum, ele) => (sum + ele))
+      point: this.results.reduce((sum, ele) => (sum + ele)),
+      audio: false
     })
   }
   render() {
@@ -33,9 +36,6 @@ class App extends Component {
       pop: (x) => this.onPop(x),
       end: () => this.onEnd()
     }
-    let result = {
-      point: this.state.point
-    }
     return (
       <Scroller>
         <Cover />
@@ -43,7 +43,8 @@ class App extends Component {
         <Quest id={2} {...event} />
         <Quest id={3} {...event} />
         <Quest id={4} {...event} />
-        <End {...result} />
+        <End point={this.state.point} />
+        <Audio src={this.state.audio} />
       </Scroller>
     )
   }
