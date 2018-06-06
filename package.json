@@ -2,7 +2,7 @@
   "name": "refuse",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://airchen233.github.io/refuse/",
+  "homepage": "https://trash.glassysky.tech",
   "dependencies": {
     "animate.css": "^3.6.1",
     "gh-pages": "^1.2.0",
