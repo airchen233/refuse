@@ -101,11 +101,15 @@ class Quest extends Component {
         <Section>
           <Asset id="e3_1" />
           <Asset id={`e${id + 1}_2`} animate="swing" />
-          <div id="e3_3">
+          <div className="e3_3">
             <Icon id={`i${id + 1}_1`} animate="bounceIn" {...event} />
             <Icon id={`i${id + 1}_2`} animate="bounceIn" {...event} />
+          </div>
+          <div className="e3_3">
             <Icon id={`i${id + 1}_3`} animate="bounceIn" {...event} />
             <Icon id={`i${id + 1}_4`} animate="bounceIn" {...event} />
+          </div>
+          <div className="e3_3">
             <Icon id={`i${id + 1}_5`} animate="bounceIn" {...event} />
             <Icon id={`i${id + 1}_6`} animate="bounceIn" {...event} />
           </div>

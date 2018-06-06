@@ -15,7 +15,7 @@ img {
 }
 
 img.icon {
-  height: 30%
+  height: 100%
 }
 
 .b1 {
@@ -90,23 +90,17 @@ img.icon {
   height: 7%;
 }
 
-#e3_3 {
-  margin: 20px auto;
+.e3_3 {
+  margin: 5% auto;
   width: 60%;
-  height: 60%;
+  height: 18%;
 }
 
-#e3_3 img {
-  margin-top: 10px;
-  height: 30%;
-}
-
-#e3_3 img:nth-child(odd) {
+.e3_3 img:nth-child(odd) {
   float: left;
-  margin-right: 10%;
 }
 
-#e3_3 img:nth-child(even) {
+.e3_3 img:nth-child(even) {
   float: right;
 }
 
