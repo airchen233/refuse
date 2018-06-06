@@ -5,7 +5,8 @@ body {
 section.pagescroll {
   margin: 0 auto;
   max-width: 600px;
-  background-color: #fbb03b
+  background-color: #fbb03b;
+  overflow: hidden;
 }
 
 img {
@@ -97,10 +98,12 @@ img.icon {
 
 #e3_3 img {
   margin-top: 10px;
+  height: 30%;
 }
 
 #e3_3 img:nth-child(odd) {
-  float: left
+  float: left;
+  margin-right: 10%;
 }
 
 #e3_3 img:nth-child(even) {
