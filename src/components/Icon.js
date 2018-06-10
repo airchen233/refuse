@@ -35,6 +35,10 @@ class Icon extends Asset {
       <Asset {...props} />
     )
   }
+  componentWillMount() {
+    let img = document.createElement('img')
+    img.src = `images/${this.props.id}_2.png`
+  }
 }
 
 export default Icon
